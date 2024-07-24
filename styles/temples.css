@@ -1,0 +1,118 @@
+body {
+    font-family: 'Edu Australia VIC WA NT Hand', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #65718c;
+    color: #ededed;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Distribute space between elements */
+    align-items: center; /* Align items vertically */
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  nav.show {
+    display: flex;
+  }
+  
+  nav ul {
+    display: flex; /* Align items horizontally */
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  nav li {
+    margin: 0 10px; /* Space between links */
+  }
+  
+  nav a {
+    color: #ededed;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  nav a:hover {
+    background-color: #c87100;
+  }
+  
+  main {
+    padding: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px; /* Set consistent gap for both horizontal and vertical spacing */
+  }
+  
+  .temple {
+    margin: 0; /* Remove margin to minimize space */
+    text-align: center;
+  }
+  
+  .temple img {
+    width: 80%; /* Ensure images take full width of their container */
+    height: auto;
+  }
+  
+  .temple figcaption {
+    margin-top: 3px;
+    font-size: 0.8em; /* Smaller font size for captions */
+  }
+  
+  footer {
+    background-color: #001a1e;
+    color: #ededed;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .hamburger {
+    display: block;
+    background: none;
+    border: none;
+    color: #ededed;
+    font-size: 2em;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .temple img {
+      width: 60%; /* Adjust width for smaller screens */
+    }
+  
+    nav ul {
+      flex-direction: column; /* Stack links vertically on smaller screens */
+    }
+  
+    .hamburger {
+      display: block; /* Show hamburger on smaller screens */
+    }
+  }
+  

@@ -1,0 +1,29 @@
+@media (min-width: 768px) {
+    nav {
+      display: flex;
+      justify-content: flex-end; /* Align links to the right */
+      flex-direction: row;
+    }
+  
+    .hamburger {
+      display: none; /* Hide hamburger on larger screens */
+    }
+  
+    .gallery {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 5px; /* Set consistent gap for both horizontal and vertical spacing */
+    }
+  
+    .temple img {
+      width: 80%; /* Adjust width to ensure all images fit on larger screens */
+    }
+  
+    .temple {
+      margin: 0; /* Remove margin to minimize space */
+    }
+  
+    .temple figcaption {
+      font-size: 0.8em; /* Consistent font size for captions */
+    }
+  }
+  

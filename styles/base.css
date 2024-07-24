@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+
+body {
+    font-family: 'Edu AU VIC WA NT Hand', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #001a1e;
+    background-color: #ededed;
+}
+
+header {
+    background-color: #001a1e;
+    color: #ededed;
+    padding: 1rem;
+    text-align: center;
+}
+
+header img {
+    max-width: 150px;
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #dbbdad;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #c87100;
+    border-radius: 5px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #001a1e;
+    color: #ededed;
+    padding: 1rem;
+    text-align: center;
+}
+
+p, h2 {
+    margin: 0 0 1rem 0;
+}
