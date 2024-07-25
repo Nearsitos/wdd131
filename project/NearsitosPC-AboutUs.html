@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NearsitosPC - Home</title>
+    <link rel="stylesheet" href="styles/AboutUs.css">
+    <link rel="icon" href="images/cloud_logo.png" type="image/png"> <!-- Adding the logo to the tab -->
+    <style>
+        /* Paste your CSS here */
+    </style>
+</head>
+<body>
+    <div class="top-half">
+        <header>
+            <div class="logo">
+                <a href="NearistosPC-index.html"><img src="images/cloud_logo.png" alt="NearsitosPC Logo"></a> <!-- Making the logo clickable -->
+            </div>
+            <div class="title">
+                <h1>NearsitosPC</h1> <!-- Website title -->
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="NearistosPC-index.html">HOME</a></li> <!-- Link to the Home page -->
+                    <li><a href="NearsitosPC-Store.html">STORE</a></li> <!-- Link to the Store page -->
+                    <li><a href="NearsitosPC-AboutUs.html">ABOUT US</a></li> <!-- Link to the About Us page -->
+                </ul>
+            </nav>
+            <div class="social-dropdown">
+                <a href="#" class="social-button" onclick="toggleSocialMenu()">
+                    <img src="images/social_icon.png" alt="Social Icon" width="20" height="20">
+                </a>
+                <div class="social-menu" id="socialMenu">
+                    <a href="https://facebook.com/profile.php?id=61557215919776"><img src="images/facebook_logo.png"></a>
+                    <a href="https://twitter.com/SoyNearsito"><img src="images/twitter_logo.png"></a>
+                    <a href="https://www.instagram.com/soynearsito"><img src="images/instagram_logo.png"></a>
+                    <a href="https://www.youtube.com/@soynearsito"><img src="images/youtube_logo.png"></a>
+                    <a href="https://www.twitch.tv/soynearsito"><img src="images/twitch_logo.png"></a>
+                    <a href="https://www.tiktok.com/@soynearsito"><img src="images/tiktok_logo.png"></a>
+                </div>
+            </div>
+            <a href="NearsitosPC-Store.html" class="store-button">
+                <button class="store-button">Store</button>
+            </a>            
+        </header>
+
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-category">
+                <h3>Custom PC's</h3>
+                <div class="faq-item">
+                    <h4>What customization options do you offer?</h4>
+                    <p>We offer a wide range of customization options including CPU, GPU, RAM, storage, cooling solutions, and more. Please visit our customization page for detailed information.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I request a custom build not listed on your website?</h4>
+                    <p>Absolutely! We understand that everyone has unique needs and preferences. Feel free to contact us directly to discuss your specific requirements, and we'll be happy to assist you in creating your dream PC.</p>
+                </div>
+            </div>
+            <div class="faq-category">
+                <h3>Payments</h3>
+                <div class="faq-item">
+                    <h4>What payment methods do you accept?</h4>
+                    <p>We accept all major credit and debit cards, as well as PayPal for secure online payments.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you offer financing options?</h4>
+                    <p>Yes, we offer financing options through our trusted partners. Please visit our financing page for more information.</p>
+                </div>
+            </div>
+            <div class="faq-category">
+                <h3>Shipping</h3>
+                <div class="faq-item">
+                    <h4>Do you ship internationally?</h4>
+                    <p>Yes, we ship our products worldwide. Shipping costs and delivery times may vary depending on your location.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How can I track my order?</h4>
+                    <p>Once your order has been shipped, you will receive a tracking number via email. You can use this tracking number to monitor the status of your delivery.</p>
+                </div>
+            </div>
+            <div class="faq-category">
+                <h3>Warranty</h3>
+                <div class="faq-item">
+                    <h4>What is your warranty policy?</h4>
+                    <p>We offer a standard warranty on all our products, covering manufacturing defects and hardware malfunctions. Please refer to our warranty page for detailed terms and conditions.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How do I make a warranty claim?</h4>
+                    <p>If you encounter any issues with your product during the warranty period, please contact our customer support team. They will guide you through the process of making a warranty claim.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <form id="contactForm" action="contact.php" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-section">
+            <h3>KNOW ABOUT US</h3>
+            <ul>
+                <li><a href="NearsitosPC-AboutUs.html">About Us</a></li>
+                <li><a href="NearsitosPC-AboutUs.html">Contact Us</a></li>
+                <li><a href="NearsitosPC-AboutUs.html">Our Team</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>NEED ASSISTANCE</h3>
+            <ul>
+                <li><a href="NearsitosPC-AboutUs.html">Frequently Asked Questions</a></li>
+                <li><a href="NearsitosPC-AboutUs.html">Support</a></li>
+                <li><a href="NearsitosPC-AboutUs.html">Terms & Conditions</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>PAYMENT METHODS / SHIPPING</h3>
+            <ul>
+                <li><a href="NearsitosPC-Store.html">Payment Methods</a></li>
+                <li><a href="NearsitosPC-Store.html">Shipping Information</a></li>
+                <li><a href="NearsitosPC-AboutUs.html">Returns & Exchanges</a></li>
+            </ul>
+        </div>
+        <div class="footer-section follow-us-section">
+            <h3>FOLLOW US</h3>
+            <ul>
+                <li><a href="https://facebook.com/profile.php?id=61557215919776"><img src="images/facebook_logo.png"> Facebook</a></li>
+                <li><a href="https://twitter.com/SoyNearsito"><img src="images/twitter_logo.png"> Twitter</a></li>
+                <li><a href="https://www.instagram.com/soynearsito"><img src="images/instagram_logo.png"> Instagram</a></li>
+                <li><a href="https://www.youtube.com/@soynearsito"><img src="images/youtube_logo.png"> Youtube</a></li>
+                <li><a href="https://www.twitch.tv/soynearsito"><img src="images/twitch_logo.png"> Twitch</a></li>
+                <li><a href="https://www.tiktok.com/@soynearsito"><img src="images/tiktok_logo.png"> Tiktok</a></li>
+            </ul>
+        </div>
+        <div class="footer-disclaimer">
+            <p>&copy; 2024 NearsitosPC. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+<script src="Scripts/script.js"></script>
+</html>

@@ -1,0 +1,311 @@
+/* CSS without image styles */
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    min-height: 100vh; /* Ensure the body fills the entire viewport */
+    display: flex;
+    flex-direction: column; /* Make the body a flex container with vertical layout */
+}
+
+.top-half {
+    flex: 1; /* Let the top-half fill the remaining vertical space */
+    overflow-y: auto; /* Add this line to enable scrolling if content exceeds the height */
+}
+
+.bottom-half {
+    background-color: white;
+    padding-bottom: 50px;
+}
+
+header {
+    background-color: #14162E;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: fixed; /* Fix the header to the top */
+    width: 100%; /* Ensure the header spans the full width */
+    z-index: 1000; /* Ensure the header appears above other content */
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.title {
+    flex: 1;
+    margin-right: 20px;
+    max-width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.title h1 {
+    margin: 0;
+    color: white;
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.social-dropdown {
+    position: relative;
+    margin-left: auto;
+}
+
+.social-button {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-button img {
+    width: 60%;
+    height: auto;
+}
+
+.store-button {
+    margin-left: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #14162E;
+    border: 2px solid #14162E;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.store-button:hover {
+    background-color: #14162E;
+    color: white;
+}
+
+.store-button .store-button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.social-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #14162E;
+    min-width: auto;
+    z-index: 1;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid white;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.social-menu.show {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    opacity: 1;
+}
+
+.social-menu a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 10px;
+    margin: 0 5px;
+}
+
+.social-menu a img {
+    width: 20px;
+    height: 20px;
+}
+
+.social-menu a:hover {
+    background-color: transparent;
+}
+
+footer {
+    background-color: #04050c;
+    padding: 30px;
+    color: #ccc;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-top: 1px solid #ccc; /* Change border-bottom to border-top */
+    margin-top: auto; /* Push the footer to the bottom of the page */
+    z-index: 1;
+}
+
+.footer-section {
+    flex: 1 1 auto;
+    text-align: center;
+    margin: 0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 5px 0 0;
+    text-align: left;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.footer-section ul li img {
+    margin-right: 5px;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-disclaimer {
+    flex-basis: 100%;
+    text-align: center;
+    color: #ccc;
+    margin-top: 20px;
+}
+
+.follow-us-section ul li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.faq-category {
+    margin-bottom: 30px;
+}
+
+.faq-category h3 {
+    color: #14162E;
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h4 {
+    color: #666;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    color: #888;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.contact-section {
+    padding: 20px;
+    margin-top: 100px; /* Adjusted margin top to create space between FAQ and Contact sections */
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-section .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-section label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-section textarea {
+    height: 150px;
+}
+
+.contact-section button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #14162E;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-section button:hover {
+    background-color: #666;
+    color: white;
+}
