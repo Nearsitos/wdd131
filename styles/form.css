@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ededed;
+  }
+  
+  header {
+    background-color: #65718c;
+    color: #ededed;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  select, input[type="date"], textarea, input[type="text"] {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  fieldset {
+    border: none;
+    margin-bottom: 15px;
+    padding: 0;
+  }
+  
+  legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .rating-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .rating-stars {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+  
+  .rating-stars span {
+    font-size: 24px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .rating-stars input[type="radio"] {
+    display: none; /* Hide radio buttons */
+  }
+  
+  .rating-circles {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .rating-circles input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .rating-circles input[type="radio"] + label {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #cccccc;
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .rating-circles input[type="radio"]:checked + label {
+    background-color: #c87100;
+    border-color: #c87100;
+  }
+  
+  textarea {
+    min-height: 100px;
+  }
+  
+  input[type="submit"] {
+    background-color: #c87100;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #a55d00;
+  }
+  
+  footer {
+    background-color: #001a1e;
+    color: #ededed;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .features {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .features label {
+    margin-bottom: 5px;
+  }
+  
+  /* Horizontal stars alignment */
+  .rating-label {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .rating-label input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  /* Optional note styling */
+  .optional-note {
+    font-size: 0.9em;
+    font-style: italic;
+    color: #666666;
+    margin-top: -10px;
+    margin-bottom: 15px;
+  }
+  

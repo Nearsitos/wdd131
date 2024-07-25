@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Form</title>
+  <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+  <header>
+    <h1>Product Review Form</h1>
+  </header>
+  <main>
+    <form id="review-form" method="get" action="review.html">
+      <label for="product-name">Product Name:</label>
+      <select id="product-name" name="product-name" required>
+        <option value="" disabled selected>Select a Product ...</option>
+      </select>
+
+      <fieldset>
+        <legend>Overall Rating:</legend>
+        <div class="rating-label">
+          <input type="radio" name="rating" value="1" required>
+          ☆
+        </div>
+        <div class="rating-label">
+          <input type="radio" name="rating" value="2" required>
+          ☆☆
+        </div>
+        <div class="rating-label">
+          <input type="radio" name="rating" value="3" required>
+          ☆☆☆
+        </div>
+        <div class="rating-label">
+          <input type="radio" name="rating" value="4" required>
+          ☆☆☆☆
+        </div>
+        <div class="rating-label">
+          <input type="radio" name="rating" value="5" required>
+          ☆☆☆☆☆
+        </div>
+      </fieldset>
+
+      <label for="installation-date">Date of Installation:</label>
+      <input type="date" id="installation-date" name="installation-date" required>
+
+      <fieldset class="features">
+        <legend>Useful Features:</legend>
+        <label><input type="checkbox" name="features" value="Feature 1"> Performance</label>
+        <label><input type="checkbox" name="features" value="Feature 2"> Design</label>
+        <label><input type="checkbox" name="features" value="Feature 3"> Durability</label>
+        <label><input type="checkbox" name="features" value="Feature 4"> Easy of Useful</label>
+      </fieldset>
+
+      <label for="written-review">Written Review:</label>
+      <textarea id="written-review" name="written-review"></textarea>
+      <small class="optional-note">Optional: Please provide your feedback if you wish.</small>
+
+      <label for="user-name">Your Name:</label>
+      <input type="text" id="user-name" name="user-name">
+      <small class="optional-note">Optional: Enter your name if you wish to provide it.</small>
+
+      <input type="submit" value="Submit Review">
+    </form>
+  </main>
+  <footer>
+    <p>&copy; <span id="current-year"></span> 🦦 Your Company. 🦦 Idaho.</p>
+    <p>Reviews Submitted: <span id="review-count">0</span></p>
+  </footer>
+  <script src="scripts/form.js" defer></script>
+</body>
+</html>
